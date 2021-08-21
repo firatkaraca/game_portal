@@ -213,12 +213,10 @@
 
             
             img {
-                flex: 2;
-                
+               object-fit: cover;
+               height: 100%;
             }
             h4 {
-                flex: 0;
-                
                 @include media(medium){
                     font-size: 1.5rem;
                 }
@@ -236,11 +234,20 @@
 
                 p {
                     font-size: 1.8rem;
+                    @include media(medium) {
+                        font-size: 1.4rem;
+                    }
                 }
                 a {
                     transition: all 0.5s;
                     &:hover {
                         color: $primary-color;
+                    }
+                }
+                i{
+                    @include media(medium) {
+                        font-size: 2rem;
+                        margin:2rem 0.5rem;
                     }
                 }
             }
